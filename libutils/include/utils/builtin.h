@@ -27,6 +27,7 @@
 #define BSWAP_WORD(x) __builtin_bswap32(x)
 #elif CONFIG_WORD_SIZE == 64
 #define BSWAP_WORD(x) __builtin_bswap64(x)
+#else
 #endif
 
 /* The UNREACHABLE macro is used in some code that is imported to Isabelle via
